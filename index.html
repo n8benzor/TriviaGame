@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- link to bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- link to jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- link to css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Trivia Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="title">
+            <h1 id="main-header">Sports Trivia Game</h1>
+        </div>
+        <div id="sub-container">
+            <button id="start-button">Start</button>
+        </div>
+
+
+        <div id="game-start">
+            <div id="counter">
+                <h5>Time Remaining:</h5>
+            </div>
+
+            <div id="questionBox">
+                <div id="questionOne">
+                    <h5>Who is the all time home runs leader in Major League Baseball?</h5>
+                </div>
+                <br><label for="answerOne">
+                <input type="radio" name="aOne" id="aOneButton1">
+                Babe Ruth</label>
+
+                <input type="radio" name="aOne" id="aOneButtonTwo">
+                <label for="answerOne">Barry Bonds</label>
+
+                <input type="radio" name="aOne" id="aOneButton3">
+                <label for="answerOne">Ken Griffey Jr.</label>
+
+                <input type="radio" name="aOne" id="aOneButton4">
+                <label for="answerOne">Hank Aaron</label>
+            </div>
+
+            <div id="questionBox">
+                <div id="questionTwo">
+                    <h5>Which NFL team has never won a Super Bowl?</h5>
+                </div>
+                <br>
+                <input type="radio" name="aTwo" id="aTwoButtonOne">
+                <label for="answerOne">The Los Angeles Chargers</label>
+
+                <input type="radio" name="aTwo" id="aTwoButtonTwo">
+                <label for="answerOne">The New York Jets</label>
+
+                <input type="radio" name="aTwo" id="aTwoButtonThree">
+                <label for="answerOne">The Carolina Panthers</label>
+
+                <input type="radio" name="aTwo" id="aTwoButtonFour">
+                <label for="answerOne">The Detroit Lions</label>
+            </div>
+
+            <div id="questionBox">
+                <div id="questionThree">
+                    <h5>What did Babe Ruth, Rogers, Hornsby, Ted Williams and Willie Mays all do in their first major
+                        league at-bats?</h5>
+                </div>
+                <br>
+                <input type="radio" name="aThree" id="aThreeButtonOne">
+                <label for="answerOne">Strike Out</label>
+
+                <input type="radio" name="aThree" id="aThreeButtonTwo">
+                <label for="answerOne">Hit a Home Run</label>
+
+                <input type="radio" name="aThree" id="aThreeButtonThree">
+                <label for="answerOne">Walk</label>
+
+                <input type="radio" name="aThree" id="aThreeButtonFour">
+                <label for="answerOne">Hit by a pitch</label>
+            </div>
+
+            <div id="questionBox">
+                <div id="questionFour">
+                    <h5>Which is the only team to play in every soccer World Cup tournament?</h5>
+                </div>
+                <br>
+                <input type="radio" name="aFour" id="aFourButtonOne">
+                <label for="answerOne">Germany</label>
+
+                <input type="radio" name="aFour" id="aFourButtonTwo">
+                <label for="answerOne">Brazil</label>
+
+                <input type="radio" name="aFour" id="aFourButtonThree">
+                <label for="answerOne">Netherlands</label>
+
+                <input type="radio" name="aFour" id="aFourButtonFour">
+                <label for="answerOne">England</label>
+            </div>
+
+            <div id="questionBox">
+                <div id="questionFour">
+                    <h5>How many NBA championships did Michael Jordan win with the Chicago Bulls?</h5>
+                </div>
+                <br>
+                <input type="radio" name="aFive" id="aFiveButtonOne">
+                <label for="answerOne">Five</label>
+
+                <input type="radio" name="aFive" id="aFiveButtonTwo">
+                <label for="answerOne">Seven</label>
+
+                <input type="radio" name="aFive" id="aFiveButtonThree">
+                <label for="answerOne">Six</label>
+
+                <input type="radio" name="aFive" id="aFiveButtonFour">
+                <label for="answerOne">Four</label>
+            </div>
+
+            <div id="questionBox">
+                <div id="questionFour">
+                    <h5>Which is the only American Football team to go a whole season undefeated, including the Super
+                        Bowl?</h5>
+                </div>
+                <br>
+                <input type="radio" name="aSix" id="aSixButtonOne">
+                <label for="answerOne">The Miami Dolphins, in 1972</label>
+
+                <input type="radio" name="aSix" id="aSixButtonTwo">
+                <label for="answerOne">The New England patriots, in 2007</label>
+
+                <input type="radio" name="aSix" id="aSixButtonThree">
+                <label for="answerOne">The Chicago Bears, in 1934</label>
+                <br>
+                <input type="radio" name="aSix" id="aSixButtonFour">
+                <label for="answerOne">The Chicago Bears, in 1942</label>
+            </div>
+            <br>
+            <div id="footer">
+                <button id="done-button">Done</button>
+            </div>
+        </div>
+        <div id="results">
+            <div class="done-header">
+                <h3>All Done!</h3>
+            </div>
+            <div class="correct"></div>
+            <div class="incorrect"></div>
+            <div class="unanswered"></div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
